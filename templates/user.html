@@ -1,0 +1,17 @@
+<title>GitHub User</title>
+<link rel="stylesheet" media="screen" href="static/bootstrap.min.css">
+<link rel="stylesheet" href="static/bootstrap-theme.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="container">
+    <form action="/">
+        <input type="submit" value="<- Home" />
+    </form>
+    <h2>{{ data.username }}</h2>
+    {% for stat in data.stats %}
+    <h3>{{ stat[0] }}: {{ stat[1]}}</h3>
+    {% endfor %}
+    {% for repo in data.repos %}
+    <a href="{{ repo }}">{{ repo }}</a>
+    <br />
+    {% endfor %}
+</div>

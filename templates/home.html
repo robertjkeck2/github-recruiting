@@ -1,0 +1,14 @@
+<title>GitHub Search</title>
+<link rel="stylesheet" media="screen" href="static/bootstrap.min.css">
+<link rel="stylesheet" href="static/bootstrap-theme.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="container">
+    <h2>GitHub Candidate Search</h2>
+    <form action="" method="post" role="form">
+        {{ form.csrf }}
+        <div class="form-group">
+            <label for="name">Username:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="GitHub Username"></div>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
